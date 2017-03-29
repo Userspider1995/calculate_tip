@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.corporation.parasoft.tipcalculator.MainActivity5"
+    android:background="@color/colorBlue">
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/E1"
+    android:width="500dp"
+    android:height="100dp"
+    android:inputType="numberDecimal"
+    android:hint="@string/main.msg.Billamount"
+    android:textColor="@color/colorWhite"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColorHint="@color/colorLightGray"
+    android:gravity="center"
+    android:layout_below="@+id/T1"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/T1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main.msg.billamount"
+        android:textSize="25sp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:id="@+id/V1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLightGray"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/E1"
+        android:layout_alignLeft="@+id/E1"
+        android:layout_alignStart="@+id/E1" />
+<LinearLayout
+    android:id="@+id/L1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/V1"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal">
+    <ImageButton
+        android:id="@+id/I1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_Image_Buttons"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorBlue"
+        android:src="@drawable/emoticon_sad"/>
+    <ImageButton
+        android:id="@+id/I2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_Image_Buttons"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorBlue"
+        android:src="@drawable/emoticon_happy"/>
+    <ImageButton
+        android:id="@+id/I3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_Image_Buttons"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorBlue"
+        android:src="@drawable/emoticon"/>
+
+
+</LinearLayout>
+<View
+    android:id="@+id/V2"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@id/L1"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorLightGray"/>
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main.msg.serviceration"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/V2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    <LinearLayout
+        android:id="@+id/L2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T2"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="middle">
+<TextView
+    android:id="@+id/T3"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:text="@string/main.msg.tippercent"
+    android:textColor="@color/colorWhite"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+   />
+        <TextView
+            android:id="@+id/T4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/main.msg.tiptotal"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/V3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/L2"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@color/colorLightGray"/>
+    <TextView
+        android:id="@+id/T5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/V3"
+        android:layout_marginTop="@dimen/activity_vertical_margin_big"
+        android:text="@string/main.msg.billtotal"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/T6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/T5"
+        android:layout_marginTop="@dimen/activity_vertical_margin_big"
+        android:text="@string/main.msg.billtotalresult"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"/>
+
+</RelativeLayout>
